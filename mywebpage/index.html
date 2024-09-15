@@ -1,123 +1,38 @@
-<!doctype html>
-
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
-
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link media = "screen" rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Личная страница Меринова Максима</title>
+  </head>
+  
+  <body>
+    <div class="header"> 
+      <a href="https://ling.hse.ru/"><h2>Школа лингвистики НИУ ВШЭ</h2></a> 
+      <ul> 
+        <li><a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html"><h3>Страница курса</h3></a></li> 
+        <li><a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_4.html"><h3>Страница группы</h3></a></li> 
+      </ul>
+    </div>
 
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+    <div class="main">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Добро пожаловать на мою страничку! Меня зовут Меринов Максим, но можете звать меня просто Макс. Мне 18 лет, и мой день рождения — 1 августа 2006 года.<br><br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;Из моих хобби: я обожаю настолки и видеоигры, особенно Team Fortress 2, периодически поигрываю на гитаре, а также коллекционирую монеты, сов (ненастоящих), да и в целом всё, что попадётся под руку. Ещё у меня есть собака — такса по кличке Орландо, или Óрли, как мы его называем в семье.<br><br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;В лингвистику я попал не случайно: многие члены моей семьи были переводчиками или филологами, они с детства привили мне любовь к Языку. Я правда рад, что открыл для себя эту науку, и надеюсь, что смогу успешно её изучать.</p>
+      <img src="/myphoto.jpg" width=270px height=270px>
+      <img src="/extraphoto1.JPG" width=320px height=270px>
+      <img src="/extraphoto2.jpg" width=270px height=270px>
+    </div>
 
-	<head>
-		<title>Личная страница таксы</title>
-	 	<!-- Required meta tags -->
-	 	<meta charset="utf-8">
-	 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<meta name="description" content="Личная страница и контакты">
-
-		<!-- Bootstrap Core CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
-
-	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
-
-<!-- меню (navigation bar) -->
-
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
-				</div> 
-				<nav class="collapse navbar-collapse" id="bs-navbar"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
-					</ul>
-				</nav> 
-			</div>
-		</nav>
-
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
-
-		<header style="background-color:plum; padding-top:70px; "> 
-			<div class="container"> 
-				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Это такса</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
-					</div>
-					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="https://www.purina.ru/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0131_dachshund_smooth_standard.jpg?itok=ZbFqq_i9" style="height:320px; margin:20px 20px 40px 20px; ">
-					</div>
-				</div>
-			</div>
-		</header>
-
-<!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
-			<div class="container">
-
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
-
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Новосибирск</p>
-					</article>
-					<article>
-						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
-					</article>
-				</div>
-
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
-				</div>
-
-				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
-					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
-			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
-			</div>
-		</footer>
-	</body>
+    <div class="footer">
+      <ul>
+        <li><h1>Родной город:</h1><p><i>Родился я, когда мои родители вместе были в командировке в Австралии, в Канберре. Однако через полтора года мы вернулись в Москву, где я с тех пор и живу. А Канберру мне удалось навестить ещё раз в 2018 году.</i></p></li>
+        <li><h1>Школа:</h1><p><i>С 1 по 6 класс я учился в Школе №2123, а в 7 классе поступил в Лицей №1535. Его я и окончил в 2024 году, а теперь я учусь на I курсе образовательной программы "Фундаментальная и компьютерная лингвистка" в ВШЭ.</i></p></li>
+      </ul>
+      <div class="footer-extra">
+        <h1>Контакты и соцсети:</h1><p>Телефон — 8 910 495-11-24</p><p>Почта — merinovmax@gmail.com</p><a href="https://t.me/DLV1190">Телеграм — @DLV1190</a>
+      </div>
+    </div>
+  </body>
 </html>
