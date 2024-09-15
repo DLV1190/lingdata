@@ -1,1 +1,115 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: url("/background_main.jpg") repeat center/100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.header {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: gray;
+  text-decoration: underline;
+} 
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header ul li {
+  margin-right: 25px;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.header ul a:hover {
+  text-decoration: none;
+  color: gray;
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main p {
+  margin: 10px;
+}
+
+.main img {
+  margin: 10px;
+}
+
+.footer {
+  background-color: black;
+  box-shadow: 0 50vh 0 50vh #000;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer-extra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.footer-extra p {
+  font-size: 20px;
+}
+
+.footer-extra a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-extra a:hover {
+  color: gray;
+  text-decoration: underline;
+}
 
